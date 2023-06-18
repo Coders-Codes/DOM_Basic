@@ -41,9 +41,15 @@ let items=document.getElementsByClassName('list-group-item');
 console.log(items);
 
 items[0].style.fontWeight='Bold'; // for highlighting the single if we have to bold all text we will use loop
+items[1].textContent='Itemized';
 
 for(let i=0;i<items.length;i++)
 items[i].style.fontWeight='Bold';
 
 items[2].style.backgroundColor='Green';
 
+let li = document.getElementsByTagName('li');
+console.log(li);
+
+for(let j=0;j<li.length;j++)
+li[j].style.backgroundColor='orange';
